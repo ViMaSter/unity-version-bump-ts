@@ -1,11 +1,15 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Unity Version Bump'
+description: 'Running this actions checks for updates of upm packages and Unity editor and creates pull requests for each.here'
+author: 'Vincent Mahnke'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  projectPath:
+    required: false
+    default: ./
+    description: 'If your Unity project resides in a folder other than the root of this repository, change it to that folder (for example: `unity/`)'
+  stability:
+    required: false
+    default: release
+    description: 'Use this to specify for which kinds of versions to create pull requests (valid options: `LTS`, `release`, `beta`, `alpha`); defaults to `release`'
 runs:
   using: 'node16'
   main: 'dist/index.js'

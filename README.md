@@ -1,43 +1,27 @@
 <p align="center">
-  <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
+  <a href="https://github.com/ViMaSter/unity-version-bump/actions"><img alt="typescript-action status" src="https://github.com/ViMaSter/unity-version-bump/workflows/build-test/badge.svg"></a>
 </p>
 
-# Create a JavaScript Action using TypeScript
+# Unity Version Bump
 
-Use this template to bootstrap the creation of a TypeScript action.:rocket:
-
-This template includes compilation support, tests, a validation workflow, publishing, and versioning guidance.  
-
-If you are new, there's also a simpler introduction.  See the [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
+Running this actions checks for updates of upm packages and Unity editor and creates pull requests for each.
 
 ## Create an action from this template
 
 Click the `Use this Template` and provide the new repo details for your action
 
-## Code in Main
+## Running tests
 
-> First, you'll need to have a reasonably modern version of `node` handy. This won't work with versions older than 9, for instance.
+Run this command:
 
-Install the dependencies  
 ```bash
-$ npm install
-```
-
-Build the typescript and package it for distribution
-```bash
-$ npm run build && npm run package
-```
-
-Run the tests :heavy_check_mark:  
-```bash
-$ npm test
+$ npm all
 
  PASS  ./index.test.js
   ✓ throws invalid number (3ms)
   ✓ wait 500 ms (504ms)
   ✓ test runs (95ms)
 
-...
 ```
 
 ## Change action.yml
@@ -98,7 +82,7 @@ with:
   milliseconds: 1000
 ```
 
-See the [actions tab](https://github.com/actions/typescript-action/actions) for runs of this action! :rocket:
+See the [actions tab](https://github.com/ViMaSter/unity-version-bump/actions) for runs of this action! :rocket:
 
 ## Usage:
 
